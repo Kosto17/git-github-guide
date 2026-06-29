@@ -1,0 +1,178 @@
+# Introduction
+
+## What is Version Control?
+
+Version Control is a system that records changes made to files over time. It allows you to track every modification, restore previous versions if needed, and collaborate with other developers without losing work.
+
+Instead of creating multiple copies of the same project (such as `project_final`, `project_final_v2`, or `project_latest`), a Version Control System (VCS) keeps the complete history of changes in an organized manner.
+
+---
+
+## Why Do We Need Version Control?
+
+Imagine you are building a website.
+
+On Monday, you create the homepage.
+
+On Tuesday, you add a login page.
+
+On Wednesday, you accidentally delete an important file.
+
+Without Version Control, recovering that deleted file can be difficult or even impossible.
+
+With Version Control, you can easily restore your project to a previous working version.
+
+Version Control helps developers:
+
+- Track every change made to a project.
+- Restore previous versions.
+- Work safely without fear of losing code.
+- Collaborate with multiple developers.
+- Maintain a complete history of the project.
+
+---
+
+## Real-Life Example
+
+Imagine you are writing a college assignment.
+
+You save it with names like:
+
+```
+Assignment.docx
+Assignment_Final.docx
+Assignment_Final2.docx
+Assignment_Final_Last.docx
+Assignment_ReallyFinal.docx
+```
+
+After a few days, you don't know which file is the latest.
+
+Version Control solves this problem by automatically maintaining every version in one place, along with information about what changed and when it changed.
+
+---
+
+## What is Git?
+
+Git is a **Distributed Version Control System (DVCS)** used to track changes in source code and other files.
+
+It allows developers to:
+
+- Save project history.
+- Track changes.
+- Restore previous versions.
+- Work offline.
+- Collaborate with teams.
+- Merge changes from different developers.
+
+Git was created by **Linus Torvalds** in **2005** to help manage the development of the Linux kernel.
+
+Today, Git is the most widely used Version Control System in software development.
+
+---
+
+## What is GitHub?
+
+GitHub is a cloud-based platform that hosts Git repositories.
+
+While Git works on your local computer, GitHub stores your repositories online, making it easier to back up projects, collaborate with others, and share your work.
+
+GitHub provides additional features such as:
+
+- Repository hosting
+- Collaboration
+- Pull Requests
+- Issues
+- Project management
+- GitHub Actions
+- GitHub Pages
+
+Think of Git as the engine that manages your project history, and GitHub as the online platform where you store and share your Git repositories.
+
+---
+
+## Git vs GitHub
+
+| Git | GitHub |
+|------|---------|
+| A Version Control System | A cloud-based hosting platform |
+| Installed on your computer | Accessible through a web browser |
+| Tracks file changes | Stores Git repositories online |
+| Can work completely offline | Requires the internet for most collaboration features |
+| Used to manage project history | Used to collaborate and share projects |
+
+---
+
+## Why Learn Git and GitHub?
+
+Git and GitHub have become essential tools for modern software development.
+
+Almost every software company uses Git for version control and GitHub (or similar platforms) for collaboration.
+
+Learning Git and GitHub helps you:
+
+- Build real-world development skills.
+- Collaborate with teams efficiently.
+- Contribute to open-source projects.
+- Create an impressive portfolio.
+- Prepare for internships and software engineering jobs.
+
+---
+
+## Key Terms
+
+### Repository (Repo)
+
+A repository is a storage location for your project. It contains your project files along with the complete history of changes.
+
+---
+
+### Version
+
+A version is a saved state of your project at a specific point in time.
+
+---
+
+### Commit
+
+A commit is a snapshot of your project. Every commit records the changes made since the previous commit along with a message describing those changes.
+
+---
+
+### Branch
+
+A branch is an independent line of development. It allows you to work on new features or fixes without affecting the main project.
+
+---
+
+### Clone
+
+Cloning means creating a complete copy of a remote repository on your local computer.
+
+---
+
+### Push
+
+Push uploads your local commits to a remote repository such as GitHub.
+
+---
+
+### Pull
+
+Pull downloads the latest changes from a remote repository and updates your local repository.
+
+---
+
+## Summary
+
+In this chapter, you learned:
+
+- What Version Control is.
+- Why Version Control is important.
+- A real-life example of Version Control.
+- What Git is.
+- What GitHub is.
+- The difference between Git and GitHub.
+- Common Git terminology.
+
+These concepts form the foundation for understanding Git and GitHub. In the next chapter, we will explore **Version Control Systems (VCS)** in detail, including their types, advantages, and how they evolved over time.
