@@ -1,0 +1,311 @@
+# Git
+
+## What is Git?
+
+Git is a **Distributed Version Control System (DVCS)** that helps developers track changes in files, manage different versions of a project, and collaborate with others efficiently.
+
+Instead of saving multiple copies of a project with different names, Git keeps the complete history of every change in a repository. It allows developers to return to previous versions, compare changes, and work on new features without affecting the main project.
+
+Git is free, open-source, fast, and works on Windows, macOS, and Linux.
+
+---
+
+# History of Git
+
+Git was created by **Linus Torvalds** in **2005** during the development of the Linux Kernel.
+
+Before Git, the Linux community used another Version Control System called **BitKeeper**. When licensing issues arose, Linus Torvalds developed Git to provide a fast, reliable, and distributed version control system.
+
+Today, Git is the most widely used Version Control System in the software industry.
+
+---
+
+# Why Use Git?
+
+Git solves many common problems faced during software development.
+
+With Git, developers can:
+
+- Track every change made to a project.
+- Restore previous versions if something goes wrong.
+- Collaborate with multiple developers.
+- Work on different features independently.
+- Keep a complete history of the project.
+- Merge changes from different developers.
+
+---
+
+# Features of Git
+
+Some important features of Git include:
+
+- Distributed Version Control
+- Fast performance
+- Offline support
+- Complete project history
+- Branching and merging
+- Data integrity
+- Open source
+- Easy collaboration
+
+---
+
+# How Git Works
+
+Git records changes by creating **commits**. Each commit represents a snapshot of the project at a specific point in time.
+
+A typical Git workflow looks like this:
+
+```text
+Working Directory
+        │
+        ▼
+Staging Area
+        │
+        ▼
+Local Repository
+        │
+        ▼
+Remote Repository (GitHub)
+```
+
+---
+
+# Git Architecture
+
+Git consists of four main areas.
+
+## 1. Working Directory
+
+The **Working Directory** is the folder where you create, edit, and delete files.
+
+Whenever you make changes to your project, those changes first appear in the Working Directory.
+
+Example:
+
+```
+index.html
+style.css
+script.js
+README.md
+```
+
+These files are not yet saved in Git's history.
+
+---
+
+## 2. Staging Area
+
+The **Staging Area** (also called the Index) is a temporary place where you prepare files before saving them permanently.
+
+Files are moved to the staging area using:
+
+```bash
+git add filename
+```
+
+or
+
+```bash
+git add .
+```
+
+Think of the staging area as a "waiting room" before creating a commit.
+
+---
+
+## 3. Local Repository
+
+The **Local Repository** stores all commits on your computer.
+
+When you run:
+
+```bash
+git commit -m "Initial commit"
+```
+
+Git saves a permanent snapshot of your project in the local repository.
+
+---
+
+## 4. Remote Repository
+
+A **Remote Repository** is an online copy of your Git repository.
+
+Popular remote hosting services include:
+
+- GitHub
+- GitLab
+- Bitbucket
+
+The remote repository allows developers to share and collaborate on projects.
+
+---
+
+# What is a Repository?
+
+A **Repository (Repo)** is a storage location that contains:
+
+- Project files
+- Complete project history
+- Commits
+- Branches
+- Configuration information
+
+Repositories can be:
+
+### Local Repository
+
+Stored on your computer.
+
+### Remote Repository
+
+Stored on an online platform such as GitHub.
+
+---
+
+# What is a Commit?
+
+A **Commit** is a snapshot of your project.
+
+Each commit saves the current state of the project and includes:
+
+- The changes made
+- Author information
+- Date and time
+- A commit message
+- A unique commit ID (hash)
+
+Example:
+
+```bash
+git commit -m "Add login page"
+```
+
+---
+
+# What is a Commit Hash?
+
+Every commit has a unique identifier called a **Commit Hash**.
+
+Example:
+
+```
+3f7d8ab42fbc91d2d87b4b2b8ef4d9c6e81d51fa
+```
+
+Git uses this hash to identify and retrieve specific commits.
+
+---
+
+# Git Workflow Example
+
+Imagine you edit a file named `index.html`.
+
+Step 1:
+
+Modify the file.
+
+↓
+
+Step 2:
+
+```bash
+git status
+```
+
+Git detects the changes.
+
+↓
+
+Step 3:
+
+```bash
+git add index.html
+```
+
+The file moves to the Staging Area.
+
+↓
+
+Step 4:
+
+```bash
+git commit -m "Update homepage"
+```
+
+Git creates a snapshot in the Local Repository.
+
+↓
+
+Step 5:
+
+```bash
+git push
+```
+
+The commit is uploaded to GitHub.
+
+---
+
+# Advantages of Git
+
+Git provides several benefits:
+
+- Fast and efficient
+- Free and open-source
+- Works offline
+- Reliable data storage
+- Complete version history
+- Supports branching
+- Easy merging
+- Excellent collaboration
+- Widely used in the software industry
+
+---
+
+# Limitations of Git
+
+Although Git is powerful, it has a few limitations:
+
+- Can be difficult for beginners initially.
+- Requires learning command-line commands.
+- Merge conflicts can occur when multiple developers edit the same code.
+
+These challenges become easier to manage with practice.
+
+---
+
+# Common Git Terminology
+
+| Term | Meaning |
+|------|---------|
+| Repository | Storage location for a project |
+| Commit | Saved snapshot of the project |
+| Branch | Independent line of development |
+| Clone | Copy a repository to your computer |
+| Push | Upload local commits to a remote repository |
+| Pull | Download updates from a remote repository |
+| Fetch | Download changes without merging |
+| Merge | Combine changes from different branches |
+
+---
+
+# Summary
+
+In this chapter, you learned:
+
+- What Git is.
+- The history of Git.
+- Why Git is used.
+- Features of Git.
+- Git architecture.
+- Working Directory.
+- Staging Area.
+- Local Repository.
+- Remote Repository.
+- Repository and Commit.
+- Commit Hash.
+- Advantages and limitations of Git.
+
+In the next chapter, we will learn about **GitHub**, including repositories, forks, pull requests, issues, GitHub Pages, and how GitHub works with Git.
