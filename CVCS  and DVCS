@@ -1,0 +1,238 @@
+# Centralized vs Distributed Version Control
+
+## Introduction
+
+Version Control Systems (VCS) help developers track changes in projects. Among the different types of VCS, the two most commonly used are:
+
+- Centralized Version Control System (CVCS)
+- Distributed Version Control System (DVCS)
+
+Understanding the difference between these two systems is important because **SVN** follows the centralized model, while **Git** follows the distributed model.
+
+---
+
+# Centralized Version Control System (CVCS)
+
+A **Centralized Version Control System (CVCS)** stores the project's source code and history on a **single central server**.
+
+Every developer connects to this central server to download files, upload changes, and collaborate with the team.
+
+```
+            Central Server
+                 │
+     ┌───────────┼───────────┐
+     │           │           │
+Developer A  Developer B  Developer C
+```
+
+The server acts as the single source of truth. If you want the latest version of the project, you must connect to the server.
+
+---
+
+## How CVCS Works
+
+1. A central server stores the complete project.
+2. Developers download the latest version.
+3. They make changes on their local computers.
+4. The changes are sent back to the central server.
+5. Other developers update their local copies from the server.
+
+---
+
+## Advantages of CVCS
+
+- Easy to understand and manage.
+- One central location for the project.
+- Better control over user permissions.
+- Simple project administration.
+- Everyone works on the same central repository.
+
+---
+
+## Disadvantages of CVCS
+
+- Requires access to the central server.
+- Internet or network connection is usually needed.
+- If the server crashes, development may stop.
+- Single point of failure.
+- Limited offline work.
+
+---
+
+## Examples of CVCS
+
+- Apache Subversion (SVN)
+- CVS (Concurrent Versions System)
+- Perforce (uses a centralized model)
+
+---
+
+# Distributed Version Control System (DVCS)
+
+A **Distributed Version Control System (DVCS)** gives every developer a **complete copy of the repository**, including the entire project history.
+
+Developers do not depend on a central server for most operations.
+
+```
+Developer A
+Complete Repository
+        │
+        │
+Developer B
+Complete Repository
+        │
+        │
+Developer C
+Complete Repository
+
+        ↕ Synchronization
+
+   Remote Repository (GitHub)
+```
+
+Each developer has their own complete repository.
+
+---
+
+## How DVCS Works
+
+1. Clone the repository.
+2. Receive the complete project history.
+3. Work locally.
+4. Save changes using commits.
+5. Push changes to the remote repository.
+6. Other developers pull the latest updates.
+
+---
+
+## Advantages of DVCS
+
+- Works offline.
+- Faster operations.
+- Complete project history on every computer.
+- Better backup.
+- No single point of failure.
+- Easier branching and merging.
+- Excellent collaboration.
+
+---
+
+## Disadvantages of DVCS
+
+- Slightly more storage required.
+- More concepts for beginners.
+- Synchronization may require additional commands.
+
+---
+
+## Examples of DVCS
+
+- Git
+- Mercurial
+- Bazaar
+
+---
+
+# SVN vs Git
+
+| Feature | SVN | Git |
+|---------|-----|-----|
+| Type | Centralized | Distributed |
+| Repository | Central Server | Local + Remote |
+| Internet Required | Usually Yes | No (for most operations) |
+| Offline Work | Limited | Fully Supported |
+| Speed | Slower | Faster |
+| Backup | Server Only | Every Developer Has a Copy |
+| Branching | Slower | Very Fast |
+| Merging | More Difficult | Easier |
+| Failure Risk | High (Server Failure) | Low |
+| Popularity | Moderate | Very High |
+
+---
+
+# Centralized vs Distributed
+
+| Feature | Centralized VCS | Distributed VCS |
+|----------|-----------------|-----------------|
+| Project History | Stored on Server | Stored on Every Computer |
+| Offline Work | Limited | Excellent |
+| Collaboration | Good | Excellent |
+| Speed | Moderate | Fast |
+| Backup | Single Backup | Multiple Backups |
+| Failure Risk | High | Low |
+| Internet Dependency | High | Low |
+| Branching | Slower | Faster |
+| Merging | More Complex | Easier |
+| Examples | SVN, CVS | Git, Mercurial |
+
+---
+
+# Real-Life Example
+
+Imagine your class is working on a group assignment.
+
+### Centralized Version Control
+
+There is only **one notebook** kept in the classroom.
+
+Whenever someone wants to write something:
+
+- They must go to the classroom.
+- Use the notebook.
+- Return it.
+
+If the notebook is lost, everyone's work is lost.
+
+---
+
+### Distributed Version Control
+
+Every student has a **complete photocopy** of the notebook.
+
+Everyone can work at home.
+
+Later, they combine their changes into one final version.
+
+Even if one notebook is lost, other copies still exist.
+
+This is exactly how Git works.
+
+---
+
+# Which One Should You Choose?
+
+Today, most software companies prefer **Git** because it offers:
+
+- Faster performance
+- Better collaboration
+- Offline development
+- Easier branching
+- Better backup
+- More flexibility
+
+However, some organizations still use **SVN** because it provides centralized control and fits certain enterprise workflows.
+
+---
+
+# Key Takeaways
+
+- **CVCS** stores the project on a central server.
+- **DVCS** gives every developer a complete copy of the repository.
+- **SVN** is a Centralized Version Control System.
+- **Git** is a Distributed Version Control System.
+- Git is faster, more flexible, and more widely used in modern software development.
+
+---
+
+# Summary
+
+In this chapter, you learned:
+
+- What Centralized Version Control is.
+- What Distributed Version Control is.
+- How both systems work.
+- Their advantages and disadvantages.
+- The differences between SVN and Git.
+- Why Git has become the industry standard for version control.
+
+In the next chapter, we will explore **Git** in detail, including its architecture, repositories, staging area, commits, and the complete Git workflow.
