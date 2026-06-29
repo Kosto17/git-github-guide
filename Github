@@ -1,0 +1,345 @@
+# GitHub
+
+## What is GitHub?
+
+GitHub is a **cloud-based platform** that hosts Git repositories online. It allows developers to store, manage, share, and collaborate on projects using Git.
+
+While **Git** is a Version Control System that works on your local computer, **GitHub** provides an online platform where repositories can be backed up, shared, and developed collaboratively.
+
+GitHub is one of the most popular platforms used by software developers, companies, and open-source communities around the world.
+
+---
+
+# Why Use GitHub?
+
+GitHub offers many benefits beyond Git itself.
+
+It allows developers to:
+
+- Store projects online.
+- Back up code safely.
+- Collaborate with team members.
+- Contribute to open-source projects.
+- Track bugs and issues.
+- Review code before merging.
+- Showcase projects through a public portfolio.
+
+---
+
+# How GitHub Works
+
+GitHub works together with Git.
+
+The general workflow is:
+
+```text
+Create Project
+        │
+        ▼
+Local Repository (Git)
+        │
+        ▼
+Commit Changes
+        │
+        ▼
+Push
+        │
+        ▼
+GitHub Repository
+```
+
+Developers can then:
+
+- View code online.
+- Download repositories.
+- Make contributions.
+- Review changes.
+- Collaborate with others.
+
+---
+
+# What is a GitHub Repository?
+
+A **GitHub Repository** is an online storage space for your project.
+
+A repository contains:
+
+- Source code
+- Project files
+- Commit history
+- Branches
+- Issues
+- Pull Requests
+- README files
+- Licenses
+
+Repositories can be:
+
+- Public
+- Private
+
+---
+
+# Public Repository
+
+A **Public Repository** can be viewed by anyone.
+
+Anyone can:
+
+- Read the code.
+- Clone the repository.
+- Contribute (if permitted).
+
+Public repositories are commonly used for:
+
+- Open-source projects
+- Learning
+- Portfolio projects
+
+---
+
+# Private Repository
+
+A **Private Repository** is only accessible to people who have permission.
+
+Private repositories are commonly used for:
+
+- Company projects
+- Personal work
+- Confidential software
+
+---
+
+# GitHub Features
+
+GitHub provides many useful features.
+
+## Repository
+
+Stores your project and its complete history.
+
+---
+
+## Branch
+
+A branch allows developers to work on new features without affecting the main code.
+
+Example:
+
+```
+main
+ │
+ ├── login-feature
+ │
+ ├── payment-feature
+ │
+ └── bug-fix
+```
+
+---
+
+## Fork
+
+A **Fork** creates your own copy of someone else's repository.
+
+You can:
+
+- Experiment freely.
+- Make changes independently.
+- Submit improvements later.
+
+Forking is widely used in open-source development.
+
+---
+
+## Clone
+
+Cloning means downloading a complete copy of a GitHub repository to your local computer.
+
+Example:
+
+```bash
+git clone https://github.com/username/project.git
+```
+
+---
+
+## Pull Request (PR)
+
+A **Pull Request** is a request to merge changes into another branch.
+
+It allows maintainers to:
+
+- Review code.
+- Suggest improvements.
+- Approve changes.
+- Merge contributions.
+
+Pull Requests are one of GitHub's most important collaboration features.
+
+---
+
+## Issues
+
+GitHub Issues help track:
+
+- Bugs
+- Feature requests
+- Improvements
+- Tasks
+
+They make project management easier.
+
+---
+
+## Stars
+
+A **Star** is similar to bookmarking or liking a repository.
+
+Developers use stars to:
+
+- Save useful repositories.
+- Show appreciation.
+- Discover popular projects.
+
+---
+
+## Watch
+
+Watching a repository allows you to receive notifications about:
+
+- New commits
+- Pull Requests
+- Releases
+- Discussions
+
+---
+
+## Releases
+
+Releases are official versions of a project.
+
+Example:
+
+```
+Version 1.0
+
+Version 1.1
+
+Version 2.0
+```
+
+They help users download stable versions of software.
+
+---
+
+## GitHub Pages
+
+GitHub Pages allows you to host static websites directly from a GitHub repository.
+
+It is commonly used for:
+
+- Personal portfolios
+- Documentation
+- Project websites
+
+---
+
+## GitHub Actions
+
+GitHub Actions is GitHub's automation platform.
+
+It can automatically:
+
+- Build projects
+- Run tests
+- Deploy applications
+- Perform continuous integration (CI)
+
+---
+
+# Git vs GitHub
+
+| Git | GitHub |
+|------|---------|
+| Version Control System | Cloud hosting platform |
+| Installed locally | Accessible through a web browser |
+| Tracks file changes | Hosts Git repositories |
+| Works offline | Requires internet for collaboration |
+| Manages project history | Enables sharing and collaboration |
+
+---
+
+# Common GitHub Workflow
+
+```text
+Create Repository
+        │
+        ▼
+Clone Repository
+        │
+        ▼
+Make Changes
+        │
+        ▼
+Commit Changes
+        │
+        ▼
+Push Changes
+        │
+        ▼
+Open Pull Request (if collaborating)
+        │
+        ▼
+Review & Merge
+```
+
+---
+
+# Advantages of GitHub
+
+GitHub provides many advantages:
+
+- Free hosting for Git repositories.
+- Easy collaboration.
+- Secure cloud backup.
+- Open-source community.
+- Code review using Pull Requests.
+- Project management tools.
+- Portfolio creation.
+- Integration with CI/CD tools.
+
+---
+
+# GitHub in Real Life
+
+Imagine a group of students working on a college project.
+
+Without GitHub:
+
+- Everyone sends files through email or messaging apps.
+- Different file versions become confusing.
+- Work may be overwritten accidentally.
+
+With GitHub:
+
+- Everyone works on the same repository.
+- Every change is tracked.
+- Team members can review each other's work.
+- The complete project history is preserved.
+
+---
+
+# Summary
+
+In this chapter, you learned:
+
+- What GitHub is.
+- Why GitHub is used.
+- How GitHub works with Git.
+- Public and Private repositories.
+- Important GitHub features such as Forks, Pull Requests, Issues, Stars, Watch, Releases, GitHub Pages, and GitHub Actions.
+- The difference between Git and GitHub.
+- A basic GitHub collaboration workflow.
+
+In the next chapter, we will learn the **Core Git Workflow**, where you'll understand how commands like `git init`, `git status`, `git add`, `git commit`, and `git push` work together to manage a project from start to finish.
