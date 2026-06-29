@@ -1,0 +1,256 @@
+# Version Control System (VCS)
+
+## What is a Version Control System?
+
+A **Version Control System (VCS)** is a software tool that helps track and manage changes made to files over time. It allows developers to save different versions of a project, restore previous versions if needed, and collaborate with others without losing work.
+
+Instead of creating multiple copies of the same project with different names, a VCS keeps all versions organized in one place.
+
+---
+
+## Why Do We Need a Version Control System?
+
+Without a Version Control System, developers often face problems such as:
+
+- Accidentally deleting important files.
+- Overwriting someone else's work.
+- Difficulty identifying who made a change.
+- No way to return to a previous version.
+- Managing multiple versions manually.
+
+A VCS solves these problems by recording every change made to a project.
+
+---
+
+## Real-Life Example
+
+Imagine you are writing a college project report.
+
+Without Version Control, your files might look like this:
+
+```
+Project.docx
+Project_Final.docx
+Project_Final2.docx
+Project_Final_Last.docx
+Project_Final_Real_Last.docx
+```
+
+After a few weeks, it becomes difficult to remember which file is the latest.
+
+With a Version Control System, all changes are stored in one project, and every version can be accessed whenever needed.
+
+---
+
+# Features of a Version Control System
+
+A Version Control System provides several useful features:
+
+- Tracks every change made to files.
+- Maintains a complete history of the project.
+- Allows developers to restore previous versions.
+- Makes collaboration easier.
+- Supports branching and merging.
+- Reduces the risk of losing important work.
+
+---
+
+# Benefits of Using Version Control
+
+Using a Version Control System offers many advantages:
+
+- Better collaboration among developers.
+- Easy backup of project history.
+- Faster bug fixing.
+- Ability to experiment safely.
+- Easy recovery from mistakes.
+- Organized project management.
+
+---
+
+# Types of Version Control Systems
+
+Version Control Systems are mainly divided into three types:
+
+1. Local Version Control System (LVCS)
+2. Centralized Version Control System (CVCS)
+3. Distributed Version Control System (DVCS)
+
+Let's understand each one.
+
+---
+
+# 1. Local Version Control System (LVCS)
+
+A Local Version Control System stores all versions of a project only on a single computer.
+
+Everything remains on the user's local machine.
+
+### Advantages
+
+- Simple to use.
+- No internet required.
+- Suitable for individual projects.
+
+### Disadvantages
+
+- No collaboration.
+- Data can be lost if the computer fails.
+- No remote backup.
+
+### Example
+
+- RCS (Revision Control System)
+
+---
+
+# 2. Centralized Version Control System (CVCS)
+
+A Centralized Version Control System stores the main project on a central server.
+
+Every developer connects to the server to upload or download changes.
+
+```
+Developer A
+      │
+Developer B
+      │
+Developer C
+      │
+      ▼
+ Central Server
+```
+
+### Advantages
+
+- Easy collaboration.
+- Centralized project management.
+- Everyone works on the latest version.
+
+### Disadvantages
+
+- Requires server availability.
+- Cannot work properly without the server.
+- If the server fails, work may stop.
+- Single point of failure.
+
+### Examples
+
+- SVN (Apache Subversion)
+- CVS
+
+---
+
+# 3. Distributed Version Control System (DVCS)
+
+A Distributed Version Control System gives every developer a complete copy of the repository, including its full history.
+
+Developers can work independently and synchronize changes later.
+
+```
+Developer A ← Complete Repository
+
+Developer B ← Complete Repository
+
+Developer C ← Complete Repository
+
+        ↕
+   Remote Repository
+```
+
+### Advantages
+
+- Full offline support.
+- Faster operations.
+- Better backup.
+- No single point of failure.
+- Easier branching and merging.
+- More reliable collaboration.
+
+### Disadvantages
+
+- Slightly larger local storage.
+- More concepts to learn initially.
+
+### Examples
+
+- Git
+- Mercurial
+- Bazaar
+
+---
+
+# Comparison of VCS Types
+
+| Feature | Local VCS | Centralized VCS | Distributed VCS |
+|----------|-----------|-----------------|-----------------|
+| Stores project locally | ✅ | ❌ | ✅ |
+| Central server required | ❌ | ✅ | Optional |
+| Offline work | ✅ | Limited | ✅ |
+| Collaboration | ❌ | Good | Excellent |
+| Backup | Poor | Moderate | Excellent |
+| Speed | Fast | Moderate | Very Fast |
+| Popular Examples | RCS | SVN, CVS | Git, Mercurial |
+
+---
+
+# Which Version Control System is Most Popular?
+
+Today, **Git** is the most widely used Version Control System because it is:
+
+- Fast
+- Reliable
+- Distributed
+- Open source
+- Easy to collaborate with
+- Supported by platforms like GitHub, GitLab, and Bitbucket
+
+Most software companies and open-source projects use Git as their primary Version Control System.
+
+---
+
+# Key Terms
+
+### Version
+
+A saved state of a project at a particular point in time.
+
+---
+
+### Repository (Repo)
+
+A storage location where all project files and their history are maintained.
+
+---
+
+### Revision
+
+A specific version of a file after changes have been saved.
+
+---
+
+### History
+
+A complete record of all changes made to a project.
+
+---
+
+### Rollback
+
+The process of returning a project to an earlier version.
+
+---
+
+# Summary
+
+In this chapter, you learned:
+
+- What a Version Control System (VCS) is.
+- Why Version Control is important.
+- The problems it solves.
+- Features and benefits of Version Control.
+- The three types of Version Control Systems.
+- The differences between Local, Centralized, and Distributed Version Control.
+- Why Git has become the industry standard.
+
+In the next chapter, we will explore **Centralized vs Distributed Version Control Systems** in greater detail, including a comparison between **SVN and Git**.
